@@ -30,7 +30,7 @@ int main()
     h = (b-a)/n;
     local_n = (double)n/c_size;
     local_a = a + my_rank*local_n*h;
-    local_b = a+ local_n*h;
+    local_b = local_a+ local_n*h;
     local_int = trap(local_a,local_b,local_n,h);
 
      if(my_rank != 0){
