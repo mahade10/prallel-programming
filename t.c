@@ -10,7 +10,7 @@ double func(double x){
     double segmentArea, tmp;
     int i;
     segmentArea = (func(local_a)+func(local_b))/2.0;
-    for(i=1;i<local_n;i++){
+    for(i=1;i<local_n-1;i++){
         segmentArea = segmentArea + func(local_a+i*h);
     }
     segmentArea =segmentArea*h;
